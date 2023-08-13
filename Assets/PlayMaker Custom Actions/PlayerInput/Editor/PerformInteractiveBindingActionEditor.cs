@@ -29,6 +29,7 @@ namespace HutongGames.PlayMaker.Actions
 			EditField(nameof(source.bindingIndexCache));
 			EditField(nameof(source.newRebindedKey));
 			EditField(nameof(source.newRebindedPath));
+			EditField(nameof(source.excludedPath));
 			EditField(nameof(source.OnRebind));
 			EditField(nameof(source.OnError));
 			

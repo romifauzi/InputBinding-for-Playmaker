@@ -1,5 +1,6 @@
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
+using UnityEngine;
 
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -12,17 +13,13 @@ namespace HutongGames.PlayMaker.Actions
 	{
 		[ObjectType(typeof(MatchPath))]
 		public FsmEnum matchPath;
-
 		public FsmBool manualBinding;
-
 		public FsmInt bindingIndexCache;
-
 		public FsmString newRebindedKey;
-
 		public FsmString newRebindedPath;
-
+		[Tooltip("For multiple path, add , between path")]
+		public FsmString excludedPath;
 		public FsmEvent OnRebind;
-
 		public FsmEvent OnError;
 
 		public override void OnEnter()
@@ -35,11 +32,24 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			action.action.Disable();
 			bindingIndexCache.Value = bindingIndex;
-			action.action.PerformInteractiveRebinding(bindingIndex).WithControlsHavingToMatchPath($"<{matchPath}>").WithExpectedControlType<ButtonControl>()
+			var rebind = action.action.PerformInteractiveRebinding(bindingIndex).WithControlsHavingToMatchPath($"<{matchPath}>").WithExpectedControlType<ButtonControl>()
 				.OnMatchWaitForAnother(0.1f)
+				.WithCancelingThrough($"<{MatchPath.Keyboard}>/escape")
 				.OnComplete(RebindEnd)
-				.OnCancel(RebindError)
-				.Start();
+				.OnCancel(RebindError);
+
+			if (excludedPath.Value.Length > 0)
+			{ 
+				var excludes = excludedPath.Value.Split(",");
+
+				foreach (var ex in excludes)
+				{
+					rebind.WithControlsExcluding(ex);
+				}
+			}
+
+			rebind.Start();
+
 			void RebindEnd(InputActionRebindingExtensions.RebindingOperation operation)
 			{
 				string effectivePath = operation.action.bindings[base.bindingIndex.Value].effectivePath;

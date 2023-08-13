@@ -1322,7 +1322,13 @@ MonoBehaviour:
         networkSync: 0
         value: 3
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -1357,7 +1363,7 @@ MonoBehaviour:
         intValue: 0
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -2168,7 +2174,13 @@ MonoBehaviour:
         networkSync: 0
         value: 6
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: <Gamepad>/rightStick
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -2203,7 +2215,7 @@ MonoBehaviour:
         intValue: 1
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -2591,7 +2603,13 @@ MonoBehaviour:
         networkSync: 0
         value: 1
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -2626,7 +2644,7 @@ MonoBehaviour:
         intValue: 0
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -2797,7 +2815,13 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -2832,7 +2856,7 @@ MonoBehaviour:
         intValue: 0
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -3085,7 +3109,13 @@ MonoBehaviour:
         networkSync: 0
         value: 9
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: <Gamepad>/rightStick
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -3120,7 +3150,7 @@ MonoBehaviour:
         intValue: 1
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -3373,7 +3403,13 @@ MonoBehaviour:
         networkSync: 0
         value: 1
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: <Gamepad>/rightStick
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -3408,7 +3444,7 @@ MonoBehaviour:
         intValue: 1
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -4406,7 +4442,13 @@ MonoBehaviour:
         networkSync: 0
         value: 4
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -4441,7 +4483,7 @@ MonoBehaviour:
         intValue: 0
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -5328,7 +5370,13 @@ MonoBehaviour:
         networkSync: 0
         value: 7
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: <Gamepad>/rightStick
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -5363,7 +5411,7 @@ MonoBehaviour:
         intValue: 1
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -5616,7 +5664,13 @@ MonoBehaviour:
         networkSync: 0
         value: 8
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: <Gamepad>/rightStick
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -5651,7 +5705,7 @@ MonoBehaviour:
         intValue: 1
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -7005,7 +7059,13 @@ MonoBehaviour:
         networkSync: 0
         value: 2
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Excluded Path
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -7040,7 +7100,7 @@ MonoBehaviour:
         intValue: 0
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
